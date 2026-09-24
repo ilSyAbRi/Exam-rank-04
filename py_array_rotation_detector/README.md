@@ -7,6 +7,12 @@
 
 > py_array_rotation_detector.py
 
+
+
+## My Flowchart
+
+![Flowchart](./flowchart1.drawio.png)
+
 #### Moulinette Rules & Constraints
 
 > Forbidden built-ins / modules: collections.deque.rotate(). Use only permitted built-in functions to avoid getting 0 on exam day.

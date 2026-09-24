@@ -5,18 +5,15 @@ def array_rotation_detector(arr1: list, arr2: list) -> bool:
         return True
     elif len_arr1 != len_arr2:
         return False
-
-    nb_modulo = len_arr1
-
-    for i in range(len_arr1):
-        val = arr1[i]
-        id_arr1 = arr1.index(val)
-        next_id_arr1 = (id_arr1 + 1) % nb_modulo
-        id_arr2 = arr2.index(val)
-        next_id_arr2 = (id_arr2 + 1 )% nb_modulo
-        if arr1[next_id_arr1] != arr2[next_id_arr2]:
-            return False
     
-    return True
+    for i in range(len_arr1):
+        cut = i
+        first_part = arr1[cut:]
+        second_part = arr1[:cut]
+        comp_arr = first_part + second_part
+        if comp_arr == arr2:
+            return True
+    
+    return False
 
-print(array_rotation_detector([1, 2, 3], [3, 2, 1]))
+print(array_rotation_detector([1,2,1,3], [1,3,1,2]))

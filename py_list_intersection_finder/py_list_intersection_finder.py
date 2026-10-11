@@ -1,0 +1,17 @@
+def appear_in_all_lists(element: int, lists: list[list[int]]) -> bool:
+    for list in lists:
+        if element not in list:
+            return False
+    return True
+
+def list_intersection_finder(lists: list[list[int]]) -> list[int]:
+
+    result = set()
+
+    for element in lists[0]:
+        check = appear_in_all_lists(element, lists)
+        if check:
+            result.add(element)
+    result = sorted(result)
+    return result
+print(list_intersection_finder([[]]))

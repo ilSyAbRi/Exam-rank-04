@@ -9,3 +9,9 @@ The function should:
 - Grid coordinates start from (0, 0) at top-left
 - Ignore coordinates outside the grid boundaries
 - Handle duplicate coordinates (star appears only once)
+
+> Function signature
+
+```
+def constellation_mapper(stars: list[tuple[int, int]], dim: int) -> list[str]:
+```

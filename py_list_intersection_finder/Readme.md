@@ -2,7 +2,7 @@
 
 > Assignment
 
-Write a function that finds the intersection of multiple sorted lists.
+Write a function that finds the intersection of multiple sorted lists.<br>
 Return a new list containing elements that appear in ALL input lists, in sorted order.
 
 The function should:
